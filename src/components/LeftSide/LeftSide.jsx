@@ -6,6 +6,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import FeedIcon from '@mui/icons-material/Feed';
 import GroupIcon from '@mui/icons-material/Group';
 import Groups2Icon from '@mui/icons-material/Groups2';
+import {Link} from "react-router-dom";
 
 
 const LeftSide = () => {
@@ -20,9 +21,9 @@ const LeftSide = () => {
                 Сообщения
             </a></div>
 
-            <a href="#" className="menu-bottom__item"> <FeedIcon />
+            <Link to="/post-list" className="menu-bottom__item"> <FeedIcon />
                 Лента
-            </a>
+            </Link>
 
             <a href="#" className="menu-bottom__item"> <GroupIcon />
                 Друзья

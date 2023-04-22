@@ -19,6 +19,7 @@ import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import AudiotrackOutlinedIcon from '@mui/icons-material/AudiotrackOutlined';
 import PlayCircleFilledOutlinedIcon from '@mui/icons-material/PlayCircleFilledOutlined';
+import {Link} from "react-router-dom";
 
 
 // import Logo from './logo192.png';
@@ -32,7 +33,7 @@ const Header = () => {
           {/*<Logo />*/}
 
           <Typography variant="h5" >
-            Global.Today
+            <Link to="/">Global.Today</Link>
           </Typography>
 
           <div className={s.header__icons}>

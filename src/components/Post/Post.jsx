@@ -22,6 +22,7 @@ import dayjs from "dayjs";
 import 'dayjs/locale/ru';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import ReplyIcon from '@mui/icons-material/Reply';
+import {Link} from "react-router-dom";
 
 
 
@@ -46,6 +47,7 @@ export default function RecipeReviewCard({
   created_at,
   text,
   author,
+    _id,
 }) {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -69,7 +71,11 @@ export default function RecipeReviewCard({
         title={author.name}
         subheader={dayjs(created_at).fromNow()}
       />
-      <CardMedia component="img" height="360" image={image} alt="ghghhghghhggh" />
+
+      <Link to={`/post/${_id}`}>
+        <CardMedia component="img" height="360" image={image} alt="ghghhghghhggh" />
+      </Link>
+
       <CardContent>
         <Typography variant="h6" color="title">
           {title}
