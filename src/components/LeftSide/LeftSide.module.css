@@ -1,0 +1,29 @@
+.leftContainer{
+
+    width: 250px;
+    height: 500px;
+    background-color: #eaeaea;
+    font-size: 18px;
+    color: #494949;
+    border-radius: 3px;
+
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #5e5e5e;
+
+}
+
+
+
+.leftContainer a:hover {
+    opacity: 0.8;
+}
+
+.menu-bottom__item {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+

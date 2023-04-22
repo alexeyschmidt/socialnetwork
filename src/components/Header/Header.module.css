@@ -1,0 +1,49 @@
+header {
+    height: 100px;
+    background: -webkit-linear-gradient(68deg, #3561e8,#4a7ef2,#558df6);
+    background: linear-gradient(68deg, #3561e8,#4a7ef2,#558df6);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+.header__icons {
+
+}
+
+.header__icon {
+    margin-right: 18px;
+}
+
+.header__icon:hover {
+    cursor: pointer;
+  opacity: 0.75;
+
+}
+
+.header__icons:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appbar {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_search {
+    color: #ffffff;
+}
+
+.main_search_icon {
+    color: #ffffff;
+}
