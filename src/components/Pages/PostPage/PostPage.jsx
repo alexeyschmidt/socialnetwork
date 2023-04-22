@@ -1,10 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {useParams} from "react-router-dom";
+
 
 const PostPage = () => {
-    return (
-        <div>
+    const [post, setPost] = useState();
+    const {id} = useParams();
+    console.log('iddd', id)
 
-        </div>
+    useEffect(() => {
+        // запрос за постом по id, записал в стейт setPost и потом из стейта прокинул в страницу для отрисовки данные
+    }, []);
+
+    return (
+        <>
+            POst id
+        </>
     );
 };
 
